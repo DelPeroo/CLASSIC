@@ -29,25 +29,3 @@
         }
     }
 }
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Введи марку авто");
-        string marka = Console.ReadLine();
-
-        Auto auto_1 = new Auto(marka, 0, true);
-        while (true)
-        {
-            Console.WriteLine("На сколько хочешь ускориться");
-            int booost = int.Parse(Console.ReadLine());
-            auto_1.Boost(booost);
-            if (auto_1._sostoyanie == false)
-            {
-                break;
-            }
-
-        }
-
-    }
-}
